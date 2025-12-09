@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday – Baby</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #fdf2f8, #eef2ff);
+      padding: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+      padding: 30px 20px 40px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative gradient borders */
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 2px;
+      background: linear-gradient(135deg, #fb7185, #8b5cf6, #38bdf8);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 25px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #ec4899;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    /* Soft floating decorations */
+    .confetti span {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .confetti span:nth-child(1) { background:#fb7185; top:10%; left:10%; }
+    .confetti span:nth-child(2) { background:#38bdf8; top:20%; right:15%; }
+    .confetti span:nth-child(3) { background:#a78bfa; bottom:15%; left:12%; }
+    .confetti span:nth-child(4) { background:#facc15; bottom:12%; right:10%; }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="confetti">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Replace image URL below -->
+    <div class="photo">
+      <img src="https://i.postimg.cc/XNFXN4xy/Sarkar.jpg" alt="Photo of Ali">
+    </div>
+
+    <h1>Happy Birthday 🎂</h1>
+    <h2>Honey❤️</h2>
+
+    <p>
+      Wishing you a wonderful birthday filled with happiness, laughter, and unforgettable moments.
+      May all your dreams and wishes come true today and always.This day has become more special to me since I met you. I Love You ❤️
+    </p>
+  </div>
+</body>
+</html>
